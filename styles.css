@@ -1,0 +1,183 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}  
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00adb5;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #00adb5;
+}
+
+hr {
+    width: 60%;
+    border: none;
+    height: 1px;
+    background-color: #00adb5;
+    margin: 20px auto;
+}
+
+.profile-picture {
+    position: relative;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 173, 181, 0.7);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    object-fit: cover;
+}
+
+.profile-picture h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #00adb5;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #00adb5;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #00adb5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #f0f0f0;
+}
+
+#dynamic-heading {
+    color: #00adb5;
+    font-size: 1.8rem;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container {
+        padding: 30px;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #00adb5;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px 0;
+}
+
+.button:hover {
+    background-color: #007d85; /* Darker shade for hover effect */
+    transform: scale(1.05);
+}
+
+/* Improved spacing */
+.container {
+    padding: 50px; /* Increased padding for breathing room */
+}
+
+hr {
+    width: 80%; /* Increase this value to make the line longer */
+    border: none;
+    height: 2px; /* You can adjust the thickness here */
+    background-color: #00adb5; /* Keep your color choice */
+    margin: 20px auto; /* Centers the line horizontally */
+}
