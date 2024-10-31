@@ -181,3 +181,85 @@ hr {
     background-color: #00adb5; /* Keep your color choice */
     margin: 20px auto; /* Centers the line horizontally */
 }
+
+/* Add this to your styles.css */
+
+/* Styling for contact buttons */
+.contact-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    background-color: #00adb5;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-info a:hover {
+    background-color: #007d85; /* Slightly darker shade for hover */
+    color: #f0f0f0;
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 4px 10px rgba(0, 173, 181, 0.5); /* Hover shadow */
+}
+
+/* Style for the labels (Email, Instagram, etc.) */
+.contact-info p u {
+    font-weight: bold;
+    color: #00adb5; /* Matches the main accent color */
+    display: inline-block;
+    margin-right: 10px; /* Space between label and button */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Adjusts spacing to align with the button look */
+.contact-info p {
+    margin: 10px 0; /* Space between each contact method */
+    font-size: 1rem; /* Adjust size for readability */
+}
+
+/* Style for the labels (Email, Instagram, etc.) */
+.contact-info p u {
+    font-weight: bold;
+    color: #00adb5; /* Accent color */
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-info p u:hover {
+    color: #f0f0f0; /* Light color on hover */
+    transform: translateX(3px); /* Subtle movement on hover */
+}
+
+/* Style for the interactive buttons */
+.contact-info a {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00adb5, #006d77);
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: background 0.5s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 173, 181, 0.3);
+}
+
+.contact-info a:hover {
+    background: linear-gradient(135deg, #006d77, #00adb5);
+    transform: scale(1.1) translateY(-3px); /* Zooms and lifts the button */
+    box-shadow: 0px 6px 15px rgba(0, 173, 181, 0.6); /* Enhanced shadow */
+}
+
+.contact-info p {
+    margin: 15px 0; /* Space between each contact method */
+    font-size: 1rem;
+}
