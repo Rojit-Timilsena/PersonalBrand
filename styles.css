@@ -263,3 +263,23 @@ hr {
     margin: 15px 0; /* Space between each contact method */
     font-size: 1rem;
 }
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Contact button adjustments for mobile */
+    .contact-info a {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+        border-radius: 25px;
+        width: 90%; /* Ensures the buttons fit within the screen */
+        margin: 6px auto; /* Centers buttons */
+    }
+
+    /* Label adjustments for mobile */
+    .contact-info p u {
+        font-size: 1rem;
+        margin-right: 8px;
+        letter-spacing: 0.5px;
+    }
+}
+
