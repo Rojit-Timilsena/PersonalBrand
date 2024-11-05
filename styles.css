@@ -93,7 +93,7 @@ p {
 .contact h2 {
     font-size: 1.7rem;
     font-weight: 600;
-    text-decoration: underline;
+    text-decoration: none;
     color: #00adb5;
 }
 
@@ -283,3 +283,45 @@ hr {
     }
 }
 
+.projects {
+    margin-top: 40px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column; /* Stack the projects vertically */
+    align-items: center;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    width: 100%; /* Make it responsive */
+    max-width: 600px; /* Limit width on larger screens */
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    color: #00adb5;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+}
+
+.projects-divider {
+    width: 60%; /* Adjust this value to change the length of the line */
+    border: none; /* Remove default border */
+    height: 2px; /* Thickness of the line */
+    background-color: #00adb5; /* Color of the line */
+    margin: 20px auto; /* Centers the line horizontally */
+}
